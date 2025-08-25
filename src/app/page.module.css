@@ -80,7 +80,6 @@
 .frameWrapper {
   align-self: stretch;
   backdrop-filter: blur(38px);
-  background-color: rgba(255, 255, 255, 0.4);
   height: auto; /* flexible height */
   min-height: 70vh; /* ensures good look on mobile */
   display: flex;
@@ -104,9 +103,12 @@
   .image1Icon {
     width: 200%;
   }
+  .frameWrapper {
+    min-height: 50vh; /* ensures good look on mobile */
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .image1Icon {
     width: 260%;
   }
